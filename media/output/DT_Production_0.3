@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="node #0\nactivity_duration,last <= 385.5\ngini = 0.497\nsamples = 1820\nvalue = [840, 980]", fillcolor="#e3f1fb"] ;
+1 [label="node #1\nactivity_duration,last <= 365.0\ngini = 0.493\nsamples = 1507\nvalue = [667, 840]", fillcolor="#d6ebfa"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\nactivity_duration,last <= 357.0\ngini = 0.494\nsamples = 1483\nvalue = [663, 820]", fillcolor="#d9ecfa"] ;
+1 -> 2 ;
+3 [label="node #3\nQty_Completed,last <= 59.5\ngini = 0.493\nsamples = 1463\nvalue = [648, 815]", fillcolor="#d6ebfa"] ;
+2 -> 3 ;
+4 [label="node #4\ngini = 0.495\nsamples = 1343\nvalue = [607, 736]", fillcolor="#dceefa"] ;
+3 -> 4 ;
+5 [label="node #5\ngini = 0.45\nsamples = 120\nvalue = [41, 79]", fillcolor="#a0d0f2"] ;
+3 -> 5 ;
+6 [label="node #6\ngini = 0.375\nsamples = 20\nvalue = [15, 5]", fillcolor="#eeab7b"] ;
+2 -> 6 ;
+7 [label="node #7\ngini = 0.278\nsamples = 24\nvalue = [4, 20]", fillcolor="#61b1ea"] ;
+1 -> 7 ;
+8 [label="node #8\nactivity_duration,last <= 393.5\ngini = 0.494\nsamples = 313\nvalue = [173, 140]", fillcolor="#fae7d9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="node #9\ngini = 0.198\nsamples = 18\nvalue = [16, 2]", fillcolor="#e89152"] ;
+8 -> 9 ;
+10 [label="node #10\nweekday,last <= 1.5\ngini = 0.498\nsamples = 295\nvalue = [157, 138]", fillcolor="#fcf0e7"] ;
+8 -> 10 ;
+11 [label="node #11\nactivity_duration,last <= 630.5\ngini = 0.461\nsamples = 89\nvalue = [57, 32]", fillcolor="#f4c8a8"] ;
+10 -> 11 ;
+12 [label="node #12\ngini = 0.49\nsamples = 70\nvalue = [40, 30]", fillcolor="#f8e0ce"] ;
+11 -> 12 ;
+13 [label="node #13\ngini = 0.188\nsamples = 19\nvalue = [17, 2]", fillcolor="#e89050"] ;
+11 -> 13 ;
+14 [label="node #14\nhour,last <= 6.5\ngini = 0.5\nsamples = 206\nvalue = [100, 106]", fillcolor="#f4f9fe"] ;
+10 -> 14 ;
+15 [label="node #15\ngini = 0.46\nsamples = 78\nvalue = [28, 50]", fillcolor="#a8d4f4"] ;
+14 -> 15 ;
+16 [label="node #16\ngini = 0.492\nsamples = 128\nvalue = [72, 56]", fillcolor="#f9e3d3"] ;
+14 -> 16 ;
+}

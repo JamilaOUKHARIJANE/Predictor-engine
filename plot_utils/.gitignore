@@ -1,0 +1,11 @@
+# Ignore the 'compiled' python code
+*.pyc 
+**.ipynb_checkpoints*
+# Mac meta files
+.DS_Store
+*.png
+test_output/
+
+# Python venv directory and contents
+venv/
+
