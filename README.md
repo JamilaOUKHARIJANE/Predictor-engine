@@ -6,8 +6,8 @@ This repository contains the source code of a predictor engine that provides ser
 - `media/output` contains the numeric results regarding the performance of the conformal prediction;
 - `src` contains the backbone code for training and conformal prediction;
 - `plot_utils` contains the backbone code for plotting;
-- `settings.py` contains the main settings for the experiments as described in the paper below;
 - `experiments_runner.py` is the main Python script for running the experiments;
+- `plotEQ` is notebook for collecting conformal results and plotting results.
   
 ## Requirements
 The following Python packages are required:
@@ -25,7 +25,7 @@ The system has been tested with Python 3.11.4. After installing the requirements
 ### Running the code
 To run the evaluation for a given dataset, type:
 ```
-python experiments_runner.py --log=FMPlog
+python experiments_runner.py --log=sepsis_cases  --maxlen=61
 ```
 You can also train a model on your own dataset `my_event_log` saved in the standard `.csv` format for event log.
 First of all, define you have to add the needed keys to the configuration dictionaries in the `src/dataset_manager/DatasetManager.py` file:
@@ -42,7 +42,7 @@ neg_label[dataset] = "neg_label_my_event_log"
 ```
 then, you just need to run
 ```
-$ python experiments_runner.py --log=my_event_log
+$ python experiments_runner.py --log=my_event_log --maxlen=maxlen_of_log
 ```
 ### Gathering the results
-After running the experiments, collect results according to EQ1 by running the following "plot_EQ1.ipynb" notebook.
+After running the experiments, collect results by running the following "plot_EQ.ipynb" notebook.
